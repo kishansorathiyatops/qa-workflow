@@ -1,10 +1,10 @@
 # qa-workflow analyze
 
-Analyze requirements and identify test scope.
+Load Jira ticket and prepare for test case creation.
 
 ## Purpose
 
-Understand requirements, identify test scenarios, assess coverage needs, and define testing strategy.
+Load the Jira ticket details and prepare to create test cases.
 
 ## Who Uses This
 
@@ -12,76 +12,31 @@ QA Engineer
 
 ## Command Flow
 
-### Step 1: Load Requirements
+### Step 1: Load Jira Ticket
 
-Ask:
-- "Do you have requirements from:"
-  - [ ] Uploaded document (from init)
-  - [ ] Jira project (if integrated)
-  - [ ] New source (paste, upload, or link)
+- Load Jira Ticket ID from project config
+- Fetch ticket details from Jira
+- Display ticket summary:
+  - Ticket ID
+  - Title
+  - Description
+  - Acceptance Criteria (if available)
 
-Load and display requirements summary.
+### Step 2: Confirm Ready
 
-### Step 2: Understand Scope
-
-Ask clarifying questions:
-- "What are the main features being tested?"
-- "Are there any out-of-scope items?"
-- "What's the timeline for testing?"
-- "Are there any known risky areas?"
-- "Do we need performance/security/usability testing?"
-
-### Step 3: Identify Scenarios
-
-Analyze requirements to identify:
-- Happy path scenarios (normal usage)
-- Alternative scenarios (variations)
-- Error scenarios (error handling)
-- Edge cases (boundary conditions)
-- Non-functional scenarios (performance, security, etc.)
-
-Document each scenario with:
-- Scenario ID
-- Description
-- Actor/User type
-- Preconditions
-- Expected outcome
-- Risk level (Critical/High/Medium/Low)
-
-### Step 4: Define Test Strategy
-
-Create test strategy including:
-- Testing approach (manual, automated, both)
-- Coverage goals (e.g., "90%+ of requirements covered")
-- Risk-based prioritization
-- Testing phases/waves (if applicable)
-- Acceptance criteria for completion
-
-### Step 5: Summary & Approval
-
-Present:
-- Identified test scenarios
-- Test strategy summary
-- Estimated test case count
-- Coverage plan
-- Next steps (create-tests command)
-
-Ask: "Does this strategy look good? Any adjustments needed?"
+Display:
+- ✓ Ticket loaded successfully
+- Ready to create test cases
 
 ## Output
 
-- Requirement analysis document with:
-  - Requirements summary
-  - Identified test scenarios
-  - Test strategy
-  - Risk assessment
-  - Coverage plan
-  - Next steps (create test cases)
+- Jira ticket details in console
+- Ready status confirmation
 
 ## Technical Details
 
 - Persona: QA Engineer
-- Skills triggered: None (planning only)
-- Inputs: Requirements (from Jira, document, paste)
-- Output: Requirement analysis document
+- Skills triggered: None
+- Inputs: Jira Ticket ID (from init)
+- Output: Console display
 - Next command: `create-tests`
