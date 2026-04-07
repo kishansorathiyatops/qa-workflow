@@ -22,11 +22,25 @@ QA Engineer
   - Description
   - Acceptance Criteria (if available)
 
-### Step 2: Confirm Ready
+### Step 2: Create Testing Strategy Plan
+
+**[TRIGGER] superpowers:write-plan**
+
+Use write-plan to create a comprehensive testing strategy:
+- Understand testing scope and objectives
+- Identify high-risk areas
+- Plan test priorities (P0, P1, P2)
+- Define coverage goals
+- Create testing roadmap
+
+Output: PLAN.md (testing strategy document)
+
+### Step 3: Confirm Ready
 
 Display:
 - ✓ Ticket loaded successfully
-- Ready to create test cases
+- ✓ Testing strategy plan created (PLAN.md)
+- Ready to brainstorm test cases
 
 ## Output
 
@@ -36,7 +50,10 @@ Display:
 ## Technical Details
 
 - Persona: QA Engineer
+- Superpowers triggered: superpowers:write-plan (Step 2)
 - Skills triggered: None
 - Inputs: Jira Ticket ID (from init)
-- Output: Console display
+- Outputs:
+  - Console display (ticket details)
+  - Testing strategy plan (PLAN.md)
 - Next command: `create-tests`

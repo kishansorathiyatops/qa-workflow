@@ -18,17 +18,32 @@ Display:
 - Total number of test cases
 - List of all current test cases with IDs and titles
 - Test case summary
+- Coverage statistics
 
-### Step 2: Ask for Changes
+### Step 2: Brainstorm Coverage & Modifications
 
-Prompt: **"Do you want to make changes to any test case?"**
+**[TRIGGER] superpowers:brainstorm**
+
+Use brainstorm to explore:
+- Are there missing test scenarios or edge cases?
+- Which tests are critical vs. optional?
+- Are any tests redundant or overlapping?
+- Coverage gaps in high-risk areas?
+- Do we have sufficient P0 tests?
+- Any scenarios from previous cycles that should be added?
+
+Output: Brainstorm document with modification recommendations
+
+### Step 3: Ask for Changes
+
+Prompt: **"Do you want to make changes to any test case?"** (based on brainstorm recommendations)
 
 Options:
 - [ ] **Add Test Case** - Add new test case(s)
 - [ ] **Remove Test Case** - Remove test case(s)
 - [ ] **No Changes** - Proceed to review
 
-### Step 3A: Add Test Case (if selected)
+### Step 4A: Add Test Case (if selected)
 
 Prompt QA Lead:
 - "Enter test case details:"
@@ -42,9 +57,9 @@ Prompt QA Lead:
   - **Can we automate this?** [Yes / No]
 
 Add to test case list.
-Ask: "Add another test case?" → Repeat or go to Step 4
+Ask: "Add another test case?" → Repeat or go to Step 5
 
-### Step 3B: Remove Test Case (if selected)
+### Step 4B: Remove Test Case (if selected)
 
 Display:
 - List of all current test cases with numbers
@@ -52,9 +67,9 @@ Display:
 - Confirm removal: "Remove these test cases? (Y/N)"
 
 Remove selected test cases.
-Ask: "Remove another test case?" → Repeat or go to Step 4
+Ask: "Remove another test case?" → Repeat or go to Step 5
 
-### Step 4: Summary & Confirm
+### Step 5: Summary & Confirm
 
 Display:
 - Changes made:
@@ -126,8 +141,11 @@ Ready to proceed to review?
 ## Technical Details
 
 - Persona: QA Lead
+- Superpowers triggered: superpowers:brainstorm (Step 2)
 - Skills triggered: None (direct editing)
-- Inputs: Test cases from `create-tests`
-- Output: Modified test case list
+- Inputs: Test cases from `create-tests` and `prepare-data`
+- Outputs:
+  - Brainstorm document (coverage analysis & recommendations)
+  - Modified test case list (with additions/removals)
 - Previous command: `prepare-data`
 - Next command: `review`

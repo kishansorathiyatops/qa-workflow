@@ -17,7 +17,21 @@ QA Engineer
 Load test cases from previous `create-tests` command.
 Analyze data requirements.
 
-### Step 2: Identify Data Needs
+### Step 2: Brainstorm Data Organization
+
+**[TRIGGER] superpowers:brainstorm**
+
+Use brainstorm to explore:
+- How should test data be organized for reusability?
+- What data sets can be consolidated?
+- What are critical data dependencies?
+- How to minimize data setup time?
+- What user scenarios need specific data?
+- Performance considerations for large data sets?
+
+Output: Brainstorm document with data strategy
+
+### Step 3: Identify Data Needs
 
 Extract data requirements from test cases:
 - User data (users, permissions, roles)
@@ -25,12 +39,13 @@ Extract data requirements from test cases:
 - Transaction data (orders, payments)
 - Config/Environment data (settings, features)
 
-Group and consolidate:
+Group and consolidate (using brainstorm insights):
 - Multiple cases needing same data → create reusable data set
 - Related data that should be together
 - Dependencies between data sets
+- Optimization opportunities from brainstorm
 
-### Step 3: Generate Test Data
+### Step 4: Generate Test Data
 
 For each data need, create test data set with:
 - Data Set ID (DATA-001, DATA-002, etc.)
@@ -48,15 +63,15 @@ Use Test Data Management Skill to:
 - Ensure completeness
 - Suggest consolidations
 
-### Step 4: QA Engineer Review
+### Step 5: QA Engineer Review
 
 Present data sets:
-- Review organization and reusability
+- Review organization and reusability (from brainstorm)
 - Collect feedback on data values
 - Add or modify data as needed
 - Verify setup procedures
 
-### Step 5: Document & Organize
+### Step 6: Document & Organize
 
 Create test data document with:
 - All data sets in template format
@@ -64,13 +79,15 @@ Create test data document with:
 - Setup guide
 - Cleanup guide
 - Dependencies and relationships
+- Data organization strategy (from brainstorm)
 
-### Step 6: Summary
+### Step 7: Summary
 
 Display:
 - Total data sets created
 - Setup time estimate
-- Next steps (review command for QA Lead)
+- Data organization strategy highlighted
+- Next steps (modify-tests command for QA Lead)
 
 ## Output
 
@@ -84,7 +101,10 @@ Display:
 ## Technical Details
 
 - Persona: QA Engineer
+- Superpowers triggered: superpowers:brainstorm (Step 2)
 - Skills triggered: Test Data Management Skill
 - Inputs: Test cases from `create-tests` command
-- Output: Test data document
-- Next command: `review`
+- Outputs:
+  - Brainstorm document (data organization strategy)
+  - Test data document (organized, reusable data sets)
+- Next command: `modify-tests`

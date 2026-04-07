@@ -25,9 +25,23 @@ Use Execution & Reporting Skill to:
 - Load test data
 - Validate environment readiness
 
-### Step 2: Test Execution
+### Step 2: Execute Approved Test Plan
 
-For each test case:
+**[TRIGGER] superpowers:execute-plan**
+
+Use execute-plan to guide disciplined execution:
+- Execute test cases from approved plan
+- Follow testing strategy (from PLAN.md)
+- Track results systematically
+- Handle failures and exceptions
+- Document defects properly
+- Maintain execution quality
+
+Output: Execution results with all test data
+
+### Step 3: Test Execution
+
+For each test case (guided by execute-plan):
 1. Display test case details
 2. Verify preconditions are met
 3. Guide through test steps one-by-one
@@ -38,7 +52,7 @@ For each test case:
 8. If blocked: document reason
 9. Move to next test case
 
-### Step 3: Result Recording
+### Step 4: Result Recording
 
 For each test case, record:
 - Test case ID
@@ -50,16 +64,16 @@ For each test case, record:
 - Notes/observations
 - Supporting evidence (screenshots, logs)
 
-### Step 4: Progress Tracking
+### Step 5: Progress Tracking
 
-Display progress:
+Display progress (from execute-plan):
 - Test cases completed vs. total
 - Current pass rate
 - Defects found so far
 - Blocked/failing cases needing attention
 - Time remaining estimate
 
-### Step 5: Defect Management
+### Step 6: Defect Management
 
 If test fails:
 - Document defect details
@@ -68,12 +82,13 @@ If test fails:
 - Create Jira defect (if Jira integrated)
 - Link to test case
 
-### Step 6: Completion
+### Step 7: Completion
 
-When all tests executed:
+When all tests executed (via execute-plan):
 - Display execution summary
 - Pass/fail counts and percentages
 - Defects found
+- Plan adherence metrics
 - Next steps (report command)
 
 ## Output
@@ -88,7 +103,14 @@ When all tests executed:
 ## Technical Details
 
 - Persona: QA Engineer
+- Superpowers triggered: superpowers:execute-plan (Step 2)
 - Skills triggered: Execution & Reporting Skill
-- Inputs: Test cases and test data from previous commands
-- Output: Execution results document
+- Inputs:
+  - Test cases from `create-tests`
+  - Test data from `prepare-data`
+  - Testing plan (PLAN.md) from `analyze`
+- Outputs:
+  - Execution plan execution results
+  - Execution results document (complete with all data)
+  - Defect documentation
 - Next command: `report`

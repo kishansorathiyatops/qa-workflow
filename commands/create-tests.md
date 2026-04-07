@@ -12,12 +12,28 @@ QA Engineer
 
 ## Command Flow
 
-### Step 1: Load Analysis
+### Step 1: Load Analysis & Strategy Plan
 
-Load requirement analysis from previous `analyze` command.
-Display test scenarios to be covered.
+Load:
+- Jira ticket requirements
+- Testing strategy plan (PLAN.md) from `analyze` command
+Display test scenarios and priorities.
 
-### Step 2: Generate Test Cases
+### Step 2: Brainstorm Test Scenarios
+
+**[TRIGGER] superpowers:brainstorm**
+
+Use brainstorm to explore:
+- What scenarios matter most?
+- What could break in this feature?
+- Happy path vs. alternative flows?
+- Edge cases and boundary conditions?
+- Error scenarios and exception handling?
+- Non-functional testing (performance, security)?
+
+Output: Brainstorm document with scenario analysis
+
+### Step 4: Generate Test Cases
 
 For each test scenario, generate test case with:
 - Test Case ID (TC-001, TC-002, etc.)
@@ -31,11 +47,11 @@ For each test scenario, generate test case with:
 
 Use Test Case Generation Skill to:
 - Ensure clarity and testability
-- Suggest edge cases
+- Suggest edge cases (from brainstorm)
 - Validate completeness
 - Ensure each case is independent
 
-### Step 3: QA Engineer Review
+### Step 5: QA Engineer Review
 
 Present generated test cases to QA Engineer:
 - Display test case summaries
@@ -44,20 +60,21 @@ Present generated test cases to QA Engineer:
 - Suggest additional edge cases
 - Refine as needed
 
-### Step 4: Organize & Document
+### Step 6: Organize & Document
 
 - Organize test cases by feature/module
 - Create test case document
 - Include test case summary
-- Link each case to requirement
+- Link each case to requirement and brainstorm scenarios
 - Calculate coverage statistics
 
-### Step 5: Summary
+### Step 7: Summary
 
 Display:
 - Total test cases created
 - Coverage by requirement
 - Coverage percentage
+- Brainstorm scenarios covered
 - Next steps (prepare-data command)
 
 ## Output
@@ -72,7 +89,12 @@ Display:
 ## Technical Details
 
 - Persona: QA Engineer
+- Superpowers triggered: superpowers:brainstorm (Step 2)
 - Skills triggered: Test Case Generation Skill
-- Inputs: Requirement analysis from `analyze` command
-- Output: Test case document
+- Inputs: 
+  - Requirement analysis from `analyze` command
+  - Testing strategy plan (PLAN.md)
+- Outputs:
+  - Brainstorm document (test scenario analysis)
+  - Test case document (comprehensive test cases)
 - Next command: `prepare-data`
