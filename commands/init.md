@@ -4,7 +4,7 @@ Initialize a new QA test project.
 
 ## Purpose
 
-Sets up a new qa-workflow project with mandatory Jira integration, creates project structure, and configures Jira credentials.
+Sets up a new qa-workflow project with mandatory Jira integration, creates project structure, and links to a Jira Ticket ID.
 
 ## Who Uses This
 
@@ -15,10 +15,9 @@ QA Engineer (primary project lead)
 ### Step 1: Jira Integration (Compulsory)
 
 Jira integration is required for all projects:
-- Request Jira Cloud ID
-- Request Jira Project Key
-- Verify connection
-- Store credentials securely
+- Request Jira Ticket ID (e.g., PROJ-123)
+- Verify connection with the ticket
+- Store ticket ID
 - **Note:** This step is mandatory and cannot be skipped
 
 ### Step 2: Project Setup
@@ -32,7 +31,7 @@ Jira integration is required for all projects:
 ### Step 3: Summary
 
 Display:
-- Jira project details (Cloud ID, Project Key)
+- Jira Ticket ID
 - Project location
 - Jira integration status
 - Next steps (analyze command)
@@ -56,15 +55,14 @@ User: qa-workflow init
 QA Workflow: Setting up your QA test project with Jira integration.
 
 Step 1: Jira Integration (Required)
-Jira Cloud ID: your-domain.atlassian.net
-Jira Project Key: PAY
+Jira Ticket ID: PROJ-123
 
-[Verifying Jira connection...]
+[Verifying connection with ticket...]
 ✓ Connection successful! 
 
 QA Workflow: Perfect! Your project is ready.
 📁 Project location: qa-workflow/
-🔗 Jira integration: Enabled (PAY project)
+🔗 Jira Ticket: PROJ-123
 📋 Next step: Run 'qa-workflow analyze' to analyze requirements
 
 Ready to proceed!
