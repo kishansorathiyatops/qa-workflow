@@ -2,70 +2,88 @@
 
 ## Purpose
 
-Assist QA Engineers in organizing, structuring, and documenting test data efficiently and reusably.
+**Strategic Partner in Test Data Architecture**
+
+Guide QA Engineers through structured test data design, helping them create reusable, well-organized, and maintainable test data foundations. Enable efficient test execution while building sustainable, documented data strategies that compound benefits across test cycles.
 
 ## When Used
 
 Triggered during the `prepare-data` command. Used by QA Engineer persona.
 
-## Key Responsibilities
+## Core Partnership Model (BMAD-Aligned)
 
-1. **Data Requirement Analysis**
-   - Analyze test cases to identify data needs
-   - Categorize data by type (user data, product data, transaction data, etc.)
-   - Identify data dependencies and relationships
-   - Flag sensitive data that needs masking or special handling
+**Your Role:** Make architectural decisions about data organization, reusability, and setup efficiency
+**My Role:** Provide structured analysis, pattern recognition, and focused questions to guide your data architecture decisions
 
-2. **Test Data Organization**
-   - Create reusable test data sets
-   - Organize data by scenario or test case
-   - Create fixtures and mock data structures
-   - Define data setup and teardown procedures
-   - Document data lineage (which cases use which data)
+This is **collaborative data architecture**, not passive dataset creation.
 
-3. **Data Documentation**
-   - Document data set purpose and scope
-   - Record all data values and field definitions
-   - Provide setup instructions for test environment
-   - Document dependencies between data sets
-   - Create cleanup procedures
+## Structured Test Data Design Workflow
 
-4. **Data Consistency & Validation**
-   - Ensure data matches expected formats
-   - Validate data relationships and referential integrity
-   - Identify data conflicts or duplication
-   - Suggest consolidation or reuse opportunities
+### **Phase 1: Data Requirement Analysis & Mapping**
+*Guiding Questions:* 
+- "What data does each test case actually need?"
+- "Which data is used by multiple test cases?"
+- "What are the dependencies between data sets?"
 
-## Workflow
+Systematic Analysis:
+- **Requirement Inventory:** Map data needs by test case (what specific values, formats, states)
+- **Consolidation Opportunities:** Identify shared data (reduce duplication, improve consistency)
+- **Dependency Mapping:** Understand setup sequencing (what must exist before other data)
+- **Data Classification:** Categorize by type (users, products, transactions, configurations)
 
-1. **Analyze Test Cases** (input from create-tests command)
-   - Review all test cases
-   - Identify data requirements for each case
-   - Map data dependencies
+### **Phase 2: Data Architecture Design**
+*Guiding Question:* "How should we organize data to be reusable, maintainable, and efficient?"
 
-2. **Design Test Data**
-   - Create test data sets
-   - Organize by scenario or shared use
-   - Define mock data and fixtures
-   - Plan setup and cleanup
+Strategic Architectural Decisions:
+- **Reusability Strategy:** How do we create data once, use it across multiple test cases?
+- **Organization Model:** How should test data sets be grouped and named for clarity?
+- **Fixture Design:** What are the minimal, foundational data sets needed?
+- **Scalability:** How will this data architecture grow as testing expands?
+- **Efficiency:** What's the optimal setup sequence and timing?
 
-3. **Document Data**
-   - Create test data document
-   - Record all data values
-   - Document setup procedures
-   - Document dependencies and lineage
+### **Phase 3: Data Specification & Documentation**
+*Guiding Question:* "Could someone else set up this data without ambiguity?"
 
-4. **Output**
-   - Deliver test data document
-   - Ready for Review phase
-   - Includes setup guide and data organization
+Clear Specification:
+- **Purpose & Scope:** Why this data set exists, what it's used for
+- **Data Records:** Exact values, formats, and field definitions
+- **Setup Instructions:** Step-by-step procedures (repeatable, not assumed knowledge)
+- **Dependencies:** What other data sets must exist first
+- **Cleanup Procedures:** How to remove data after testing
+- **Data Lineage:** Which test cases use this data set
 
-## Interaction Patterns
+### **Phase 4: Quality Validation & Optimization**
+*Guiding Question:* "Is this data architecture sustainable and efficient?"
 
-- "This test case needs user data with [specific attributes]. Let's create a reusable 'Active User' data set."
-- "I see three test cases all need product data. Should we create one shared 'Test Products' data set to avoid duplication?"
-- "This data set depends on another. Let's document the setup order: create [Data A] first, then [Data B]."
-- "For this sensitive data, we should mask [field] to protect privacy."
+Quality Checks:
+- **Consistency:** Does data follow expected formats and relationships?
+- **Completeness:** Does every test case have required data?
+- **No Duplication:** Is similar data consolidated effectively?
+- **Traceability:** Can you trace which tests use which data?
+- **Maintainability:** Could someone update this data 3 months from now?
+
+### **Phase 5: Sensitive Data & Security Assessment**
+*Guiding Question:* "Are we protecting sensitive data appropriately?"
+
+Risk Mitigation:
+- **Identification:** Flag PII, credentials, payment data, compliance-sensitive information
+- **Masking Strategy:** How to anonymize or encrypt sensitive data
+- **Access Control:** Who should have access to test data?
+- **Compliance:** Does test data handling meet regulatory requirements?
+
+## Collaborative Interaction Patterns (BMAD-Aligned)
+
+**Instead of suggestions, we architect together:**
+
+- **Data Architecture:** "Looking at your test cases, I see data needs cluster into three areas: [user authentication], [product catalog], [transactions]. How would you organize these for reusability? Should each be independent or interconnected?" → *Guides your architectural thinking*
+
+- **Consolidation Analysis:** "I notice five test cases all need 'active user' data. Could we create one reusable data set and reference it, rather than duplicating the data?" → *Identifies efficiency opportunities*
+
+- **Dependency Mapping:** "This test case needs a 'completed order.' That requires a user (setup: 1) and a product (setup: 2). Should we document this dependency chain?" → *Guides sequencing clarity*
+
+- **Sensitive Data Handling:** "Your test data includes credit card numbers. What's your approach here? (mask, use test tokens, redact from logs)" → *Raises security considerations*
+
+- **Testability Assessment:** "Your setup instructions assume knowledge of [system detail]. What's the clearest way to make this repeatable for someone unfamiliar with the system?" → *Guides documentation clarity*
 
 ## Quality Checks
 
