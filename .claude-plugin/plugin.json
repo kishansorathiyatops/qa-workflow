@@ -1,0 +1,75 @@
+{
+  "name": "qa-workflow",
+  "version": "0.1.0",
+  "displayName": "QA Workflow",
+  "description": "End-to-end QA testing workflow plugin: analyze requirements → create test cases → prepare test data → review quality → execute tests → generate reports",
+  "author": {
+    "name": "QA Workflow Team",
+    "email": "qa-workflow@example.com"
+  },
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "init",
+      "description": "Initialize a new QA test project"
+    },
+    {
+      "name": "analyze",
+      "description": "Analyze requirements and identify test scope"
+    },
+    {
+      "name": "create-tests",
+      "description": "Generate test cases from requirements"
+    },
+    {
+      "name": "prepare-data",
+      "description": "Create and organize test data"
+    },
+    {
+      "name": "review",
+      "description": "Review test cases quality (QA Lead)"
+    },
+    {
+      "name": "execute",
+      "description": "Execute tests and track results"
+    },
+    {
+      "name": "report",
+      "description": "Generate comprehensive test report"
+    }
+  ],
+  "agents": [
+    {
+      "name": "qa-engineer",
+      "displayName": "QA Engineer",
+      "description": "QA Engineer persona - executor of testing workflow"
+    },
+    {
+      "name": "qa-lead",
+      "displayName": "QA Lead",
+      "description": "QA Lead persona - quality reviewer and approver"
+    }
+  ],
+  "skills": [
+    {
+      "name": "test-case-generation",
+      "displayName": "Test Case Generation",
+      "description": "Generate comprehensive, well-formed test cases"
+    },
+    {
+      "name": "test-data-management",
+      "displayName": "Test Data Management",
+      "description": "Organize and structure test data efficiently"
+    },
+    {
+      "name": "coverage-review",
+      "displayName": "Coverage & Quality Review",
+      "description": "Validate test case quality and completeness"
+    },
+    {
+      "name": "execution-reporting",
+      "displayName": "Execution & Reporting",
+      "description": "Guide test execution and generate insights"
+    }
+  ]
+}
