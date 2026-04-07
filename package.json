@@ -1,0 +1,25 @@
+{
+  "name": "qa-workflow",
+  "version": "0.1.0",
+  "description": "End-to-end QA testing workflow plugin for Claude Code",
+  "main": "bin/qa-workflow",
+  "license": "MIT",
+  "author": "QA Workflow Team",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kishansorathiyatops/qa-workflow.git"
+  },
+  "keywords": [
+    "qa",
+    "testing",
+    "test-cases",
+    "test-data",
+    "test-reports"
+  ],
+  "scripts": {
+    "setup": "bash scripts/setup.sh"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

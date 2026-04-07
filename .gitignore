@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Test artifacts
+test-results/
+coverage/
+*.log
+
+# Environment
+.env
+.env.local
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.bak
+.tmp/
+
+# Build artifacts
+dist/
+build/
