@@ -65,7 +65,7 @@ Generate insights:
 - Risk mitigation strategies
 - Areas to focus on
 
-### Step 7: Report Generation
+### Step 7: Report Generation (Markdown)
 
 Create professional test report using Report Template:
 - Executive summary
@@ -77,17 +77,43 @@ Create professional test report using Report Template:
 - Recommendations
 - Sign-off
 
-### Step 8: Summary
+Output: `reports/test-execution-report.md`
+
+### Step 8: HTML Report Generation
+
+Convert markdown report to HTML:
+- Parse markdown content
+- Apply professional HTML styling
+- Include CSS for:
+  - Clean, readable layout
+  - Responsive design (desktop, tablet, mobile)
+  - Color-coded metrics (pass=green, fail=red, blocked=yellow)
+  - Styled tables for test results
+  - Collapsible sections for details
+- Add interactive elements:
+  - Table of contents with navigation
+  - Sortable/filterable tables
+  - Charts for metrics visualization
+- Generate standalone HTML file (no external dependencies)
+
+Output: `reports/test-execution-report.html`
+
+### Step 9: Summary
 
 Display:
-- Report location
+- Report location (Markdown)
+- Report location (HTML)
 - Key metrics
 - Recommendations
 - Next steps
+- Links to both report files
 
 ## Output
 
-- Test Execution Report (using Report Template) with:
+### Markdown Report
+- `reports/test-execution-report.md`
+- Version-controlled, easily editable
+- Includes all sections:
   - Executive summary
   - Metrics and statistics
   - Test results detailed listing
@@ -95,12 +121,32 @@ Display:
   - Trends vs. previous cycles
   - Risk assessment
   - Recommendations
-  - Ready for stakeholder review
+  - QA Lead sign-off
+
+### HTML Report
+- `reports/test-execution-report.html`
+- Professional, standalone document
+- Styled with:
+  - Clean, modern layout
+  - Responsive design
+  - Color-coded metrics and status indicators
+  - Interactive elements (table of contents, sortable tables)
+  - Charts and visualizations
+  - Suitable for sharing with stakeholders, exporting to PDF
+  - No external dependencies (standalone file)
 
 ## Technical Details
 
 - Persona: QA Engineer
 - Skills triggered: Execution & Reporting Skill
 - Inputs: Execution results from `execute` command
-- Output: Test execution report (professional document)
-- Next: Stakeholder review and release decisions
+- Output: 
+  - Markdown report: `reports/test-execution-report.md`
+  - HTML report: `reports/test-execution-report.html`
+- HTML Generation:
+  - Converts markdown to HTML using markdown parser
+  - Applies professional CSS styling
+  - Generates standalone, self-contained HTML file
+  - Includes embedded CSS and JavaScript (no external dependencies)
+  - Responsive design for all screen sizes
+- Next: Stakeholder review, PDF export, release decisions
