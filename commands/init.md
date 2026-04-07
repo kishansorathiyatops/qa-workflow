@@ -4,7 +4,7 @@ Initialize a new QA test project.
 
 ## Purpose
 
-Sets up a new qa-workflow project, creates project structure, and optionally configures Jira integration.
+Sets up a new qa-workflow project with mandatory Jira integration, creates project structure, and configures Jira credentials.
 
 ## Who Uses This
 
@@ -12,34 +12,16 @@ QA Engineer (primary project lead)
 
 ## Command Flow
 
-### Step 1: Project Information
+### Step 1: Jira Integration (Compulsory)
 
-Prompt for:
-- **Project Name:** [e.g., "Payment Processing v1.5.0"]
-- **Description:** [Brief project description]
-- **Test Scope:** [What's being tested - features, modules, etc.]
-- **Team Members:** [Who will be involved - QA Engineers, QA Lead, etc.]
+Jira integration is required for all projects:
+- Request Jira Cloud ID
+- Request Jira Project Key
+- Verify connection
+- Store credentials securely
+- **Note:** This step is mandatory and cannot be skipped
 
-### Step 2: Requirements Source
-
-Ask where requirements come from:
-- [ ] Upload requirements document
-- [ ] Paste requirements text
-- [ ] Jira project (if Jira integration chosen)
-- [ ] Other source
-
-### Step 3: Jira Integration (Optional)
-
-Ask: "Do you want to integrate with Jira?"
-- If Yes:
-  - Request Jira Cloud ID
-  - Request Jira Project Key
-  - Verify connection
-  - Store credentials securely
-- If No:
-  - Proceed with standalone workflow
-
-### Step 4: Project Setup
+### Step 2: Project Setup
 
 - Create project directory structure
 - Create project config file with metadata
@@ -47,10 +29,10 @@ Ask: "Do you want to integrate with Jira?"
 - Initialize git repository (if not already done)
 - Create initial CLAUDE.md with integration info
 
-### Step 5: Summary
+### Step 3: Summary
 
 Display:
-- Project name and description
+- Jira project details (Cloud ID, Project Key)
 - Project location
 - Jira integration status
 - Next steps (analyze command)
@@ -71,29 +53,16 @@ Display:
 ```
 User: qa-workflow init
 
-QA Workflow: Hello! Let's set up your new QA test project.
+QA Workflow: Setting up your QA test project with Jira integration.
 
-Project name: Payment Processing v1.5.0
-Description: Testing new payment gateway integration
-Test scope: Payment processing, refunds, retry logic
-Team: John (QA Engineer), Sarah (QA Lead)
-
-Excellent! Now, where are your requirements?
-[1] Upload document
-[2] Paste requirements
-[3] Jira project
-[4] Other source
-
-User chooses [3] Jira
-
-QA Workflow: Great! Jira integration will help us pull requirements directly.
+Step 1: Jira Integration (Required)
 Jira Cloud ID: your-domain.atlassian.net
 Jira Project Key: PAY
 
 [Verifying Jira connection...]
 ✓ Connection successful! 
 
-QA Workflow: Perfect! Your project "Payment Processing v1.5.0" is ready.
+QA Workflow: Perfect! Your project is ready.
 📁 Project location: qa-workflow/
 🔗 Jira integration: Enabled (PAY project)
 📋 Next step: Run 'qa-workflow analyze' to analyze requirements
