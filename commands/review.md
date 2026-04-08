@@ -81,7 +81,10 @@ Display:
 - Quality assessment
 - Risk findings
 - Approval decision
-- Next steps
+- **Approval Status:**
+  - ✓ **APPROVED** → Next: `qa-workflow execute`
+  - ⚠️ **REVISIONS NEEDED** → Return to QA Engineer for fixes, then re-review
+- Next mandatory step (if approved): `qa-workflow execute`
 
 ## Output
 

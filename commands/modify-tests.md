@@ -76,9 +76,11 @@ Display:
   - Test cases added: [Count]
   - Test cases removed: [Count]
   - New total test cases: [Count]
+- ✓ Test case modifications complete
+- **Next mandatory step:** `qa-workflow review`
   
 Ask: "Ready to proceed to review?"
-- [ ] Yes - Proceed to review
+- [ ] Yes - Run: `qa-workflow review`
 - [ ] No - Make more changes (go to Step 2)
 
 ## Output

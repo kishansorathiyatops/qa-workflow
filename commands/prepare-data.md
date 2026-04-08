@@ -87,7 +87,10 @@ Display:
 - Total data sets created
 - Setup time estimate
 - Data organization strategy highlighted
-- Next steps (modify-tests command for QA Lead)
+- ✓ Data preparation complete
+- Next steps:
+  - **Option 1:** `qa-workflow modify-tests` (if QA Lead wants to adjust test cases)
+  - **Option 2:** `qa-workflow review` (if no test modifications needed)
 
 ## Output
 
