@@ -21,15 +21,22 @@ Analyze data requirements.
 
 **[TRIGGER] superpowers:brainstorm**
 
-Use brainstorm to explore:
-- How should test data be organized for reusability?
-- What data sets can be consolidated?
-- What are critical data dependencies?
-- How to minimize data setup time?
-- What user scenarios need specific data?
-- Performance considerations for large data sets?
+Use brainstorm to explore **domain-specific and project-specific data organization**:
+- How should test data be organized for reusability **in this project/domain**?
+- What data sets can be consolidated **based on this feature's requirements**?
+- What are critical data dependencies **specific to this system**?
+- How to minimize data setup time **for this project type**?
+- What user scenarios need specific data **from the Jira ticket context**?
+- Performance considerations for large data sets **relevant to this domain**?
+- Compliance or regulatory data requirements **if applicable**?
+- Domain-specific data validation rules?
 
-Output: Brainstorm document with data strategy
+**IMPORTANT:** Reference:
+- The Jira ticket requirements (domain context)
+- Test cases created (tc-cases.md) 
+- Testing strategy plan (PLAN.md)
+
+Output: `qa-workflow/projects/{ticketId}/requirements/brainstorm-data-strategy.md` (data organization strategy)
 
 ### Step 3: Identify Data Needs
 
@@ -94,12 +101,14 @@ Display:
 
 ## Output
 
-- Test Data Document with:
+- Test Data Document: `qa-workflow/projects/{ticketId}/test-data/test-data.md` with:
   - All data sets in template format
   - Data summary table
   - Setup and cleanup procedures
   - Dependencies documented
   - Linked to test cases
+- Brainstorm document: `qa-workflow/projects/{ticketId}/requirements/brainstorm-data-strategy.md`
+- **NOTE:** No auto-commit. Files saved locally for user to review and commit.
 
 ## Technical Details
 

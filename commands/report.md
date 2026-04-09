@@ -77,7 +77,7 @@ Create professional test report using Report Template:
 - Recommendations
 - Sign-off
 
-Output: `reports/test-execution-report.md`
+Output: `qa-workflow/projects/{ticketId}/reports/test-execution-report.md`
 
 ### Step 8: HTML Report Generation
 
@@ -96,7 +96,7 @@ Convert markdown report to HTML:
   - Charts for metrics visualization
 - Generate standalone HTML file (no external dependencies)
 
-Output: `reports/test-execution-report.html`
+Output: `qa-workflow/projects/{ticketId}/reports/test-execution-report.html`
 
 ### Step 9: Summary
 
@@ -111,7 +111,7 @@ Display:
 ## Output
 
 ### Markdown Report
-- `reports/test-execution-report.md`
+- `qa-workflow/projects/{ticketId}/reports/test-execution-report.md`
 - Version-controlled, easily editable
 - Includes all sections:
   - Executive summary
@@ -124,7 +124,7 @@ Display:
   - QA Lead sign-off
 
 ### HTML Report
-- `reports/test-execution-report.html`
+- `qa-workflow/projects/{ticketId}/reports/test-execution-report.html`
 - Professional, standalone document
 - Styled with:
   - Clean, modern layout
@@ -135,14 +135,17 @@ Display:
   - Suitable for sharing with stakeholders, exporting to PDF
   - No external dependencies (standalone file)
 
+### No Auto-Commit
+- **NOTE:** No auto-commit. Files saved locally for user to review and commit.
+
 ## Technical Details
 
 - Persona: QA Engineer
 - Skills triggered: Execution & Reporting Skill
 - Inputs: Execution results from `execute` command
 - Output: 
-  - Markdown report: `reports/test-execution-report.md`
-  - HTML report: `reports/test-execution-report.html`
+  - Markdown report: `qa-workflow/projects/{ticketId}/reports/test-execution-report.md`
+  - HTML report: `qa-workflow/projects/{ticketId}/reports/test-execution-report.html`
 - HTML Generation:
   - Converts markdown to HTML using markdown parser
   - Applies professional CSS styling

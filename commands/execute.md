@@ -93,12 +93,13 @@ When all tests executed (via execute-plan):
 
 ## Output
 
-- Execution Results Document with:
+- Execution Results Document: `qa-workflow/projects/{ticketId}/test-results/execution-results.md` with:
   - All test case results
   - Pass/fail counts
   - Defect list
   - Progress timeline
   - Ready for report generation
+- **NOTE:** No auto-commit. Files saved locally for user to review and commit.
 
 ## Technical Details
 

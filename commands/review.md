@@ -88,13 +88,14 @@ Display:
 
 ## Output
 
-- Review Report (using Review Template) with:
+- Review Report: `qa-workflow/projects/{ticketId}/reports/review-report.md` with:
   - Coverage analysis
   - Quality findings
   - Risk assessment
   - Data assessment
   - Approval decision
   - QA Lead sign-off
+- **NOTE:** No auto-commit. Files saved locally for user to review and commit.
 
 ## Technical Details
 

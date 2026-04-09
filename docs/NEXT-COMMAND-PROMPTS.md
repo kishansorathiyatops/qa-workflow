@@ -36,7 +36,7 @@ Next Step: [Next Command]
 
 Summary:
 - Jira Ticket ID: PROJ-123
-- Project location: qa-workflow/
+- Project location: qa-workflow/projects/PROJ-123/
 - Jira integration: Enabled
 
 Next Step: Analyze requirements and plan testing strategy
@@ -53,7 +53,7 @@ Next Step: Analyze requirements and plan testing strategy
 ✓ Testing strategy created!
 
 Summary:
-- Testing plan document: PLAN.md
+- Testing plan document: qa-workflow/projects/PROJ-123/requirements/PLAN.md
 - Test scope: [Identified]
 - Risk assessment: [Completed]
 
@@ -73,7 +73,7 @@ Next Step: Create comprehensive test cases
 Summary:
 - Total test cases: 20
 - Coverage: 95%
-- Test case document: test-cases.md
+- Test case document: qa-workflow/projects/PROJ-123/test-cases/test-cases.md
 
 Next Step: Create and organize test data
 → Run: qa-workflow prepare-data
@@ -91,7 +91,7 @@ Next Step: Create and organize test data
 Summary:
 - Total data sets: 10
 - Reusability: Optimized
-- Test data document: test-data.md
+- Test data document: qa-workflow/projects/PROJ-123/test-data/test-data.md
 
 Next Step: Choose ONE of the following:
 

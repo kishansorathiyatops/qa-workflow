@@ -24,15 +24,21 @@ Display:
 
 **[TRIGGER] superpowers:brainstorm**
 
-Use brainstorm to explore:
-- Are there missing test scenarios or edge cases?
-- Which tests are critical vs. optional?
-- Are any tests redundant or overlapping?
-- Coverage gaps in high-risk areas?
-- Do we have sufficient P0 tests?
-- Any scenarios from previous cycles that should be added?
+Use brainstorm to explore **domain-specific coverage and gaps**:
+- Are there missing test scenarios or edge cases **specific to this domain**?
+- Which tests are critical vs. optional **based on the Jira ticket requirements**?
+- Are any tests redundant or overlapping **in this project context**?
+- Coverage gaps in high-risk areas **identified in the testing strategy (PLAN.md)**?
+- Do we have sufficient P0 tests **for this feature's business impact**?
+- Any industry-specific scenarios or compliance tests needed?
+- Integration scenarios specific to this system?
 
-Output: Brainstorm document with modification recommendations
+**IMPORTANT:** Reference:
+- The Jira ticket and requirements (domain context)
+- Testing strategy plan (PLAN.md)
+- Current test cases and brainstorm documents
+
+Output: `qa-workflow/projects/{ticketId}/requirements/brainstorm-modifications.md` (modification recommendations)
 
 ### Step 3: Ask for Changes
 
@@ -85,9 +91,11 @@ Ask: "Ready to proceed to review?"
 
 ## Output
 
-- Updated test case list with modifications
+- Updated test case document: `qa-workflow/projects/{ticketId}/test-cases/test-cases.md`
+- Brainstorm document: `qa-workflow/projects/{ticketId}/requirements/brainstorm-modifications.md`
 - Summary of changes made
 - Ready status for review
+- **NOTE:** No auto-commit. Files saved locally for user to review and commit.
 
 ## Example Usage
 

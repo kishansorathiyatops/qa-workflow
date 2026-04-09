@@ -19,7 +19,8 @@ fi
 # Create directories
 echo "📁 Creating project directories..."
 mkdir -p qa-workflow/{commands,agents,skills,templates,docs/examples,lib,scripts,bin}
-mkdir -p qa-workflow/{test-cases,test-data,test-results,reports}
+# Note: Individual project directories will be created per ticket under projects/{ticketId}/
+# Structure: projects/{ticketId}/{requirements,test-cases,test-data,test-results,reports}
 
 # Create basic files
 echo "📄 Creating project files..."
@@ -56,6 +57,9 @@ if [ ! -d "qa-workflow/.git" ]; then
     git commit -m "initial: Project setup"
     cd ..
 fi
+
+# Note: Do NOT auto-commit when creating individual project artifacts
+# Let users manage git commits for projects/{ticketId}/ separately
 
 echo ""
 echo "✅ Setup complete!"
