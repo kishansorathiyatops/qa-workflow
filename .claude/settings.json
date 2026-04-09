@@ -1,0 +1,5 @@
+{
+  "enabledPlugins": {
+    "qa-workflow@qa-workflow-marketplace": true
+  }
+}
