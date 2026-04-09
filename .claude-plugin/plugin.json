@@ -1,14 +1,38 @@
 {
   "name": "qa-workflow",
-  "version": "0.1.0",
-  "displayName": "QA Workflow",
   "description": "End-to-end QA testing workflow plugin: analyze requirements → create test cases → prepare test data → review quality → execute tests → generate reports",
+  "version": "0.1.0",
   "author": {
     "name": "QA Workflow Team",
     "email": "qa-workflow@example.com"
   },
   "license": "MIT",
-  "commands": [],
-  "agents": [],
-  "skills": []
+  "keywords": [
+    "qa",
+    "testing",
+    "test-cases",
+    "test-data",
+    "quality-review",
+    "execution",
+    "reporting"
+  ],
+  "agents": [
+    "./agents/qa-engineer.md",
+    "./agents/qa-lead.md"
+  ],
+  "commands": [
+    "./commands/init.md",
+    "./commands/analyze.md",
+    "./commands/create-tests.md",
+    "./commands/prepare-data.md",
+    "./commands/review.md",
+    "./commands/execute.md",
+    "./commands/report.md"
+  ],
+  "skills": [
+    "./skills/test-case-generation.md",
+    "./skills/test-data-management.md",
+    "./skills/coverage-review.md",
+    "./skills/execution-reporting.md"
+  ]
 }
