@@ -1,37 +1,26 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "qa-workflow",
-  "displayName": "QA Workflow",
-  "version": "0.1.0",
-  "description": "Complete end-to-end QA testing workflow plugin for Claude Code. Guides QA Engineers through: analyzing requirements, creating test cases, preparing test data, quality review, test execution, and report generation.",
-  "category": "testing",
-  "tags": [
-    "qa",
-    "testing",
-    "test-cases",
-    "test-data",
-    "test-reports",
-    "quality-assurance",
-    "workflow"
-  ],
-  "author": {
+  "description": "QA Workflow plugin - Complete end-to-end QA testing workflow for Claude Code",
+  "owner": {
     "name": "QA Workflow Team",
-    "email": "qa-workflow@example.com",
-    "url": "https://github.com/kishansorathiyatops/qa-workflow"
+    "email": "qa-workflow@example.com"
   },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kishansorathiyatops/qa-workflow.git"
-  },
-  "keywords": [
-    "qa",
-    "qe",
-    "testing",
-    "test-automation",
-    "test-management",
-    "quality"
-  ],
-  "requirements": {
-    "claude-code": ">=1.0.0"
-  }
+  "plugins": [
+    {
+      "name": "qa-workflow",
+      "description": "Complete end-to-end QA testing workflow plugin for Claude Code. Guides QA Engineers through: analyzing requirements, creating test cases, preparing test data, quality review, test execution, and report generation.",
+      "category": "testing",
+      "author": {
+        "name": "QA Workflow Team",
+        "email": "qa-workflow@example.com"
+      },
+      "source": {
+        "source": "url",
+        "url": "https://github.com/kishansorathiyatops/qa-workflow.git",
+        "sha": "main"
+      },
+      "homepage": "https://github.com/kishansorathiyatops/qa-workflow"
+    }
+  ]
 }
