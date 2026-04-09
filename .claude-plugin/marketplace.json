@@ -1,7 +1,6 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "qa-workflow",
-  "description": "QA Workflow plugin - Complete end-to-end QA testing workflow for Claude Code",
+  "name": "qa-workflow-marketplace",
+  "description": "QA Workflow plugin for Claude Code",
   "owner": {
     "name": "QA Workflow Team",
     "email": "qa-workflow@example.com"
@@ -10,17 +9,12 @@
     {
       "name": "qa-workflow",
       "description": "Complete end-to-end QA testing workflow plugin for Claude Code. Guides QA Engineers through: analyzing requirements, creating test cases, preparing test data, quality review, test execution, and report generation.",
-      "category": "testing",
+      "version": "0.1.0",
+      "source": "./",
       "author": {
         "name": "QA Workflow Team",
         "email": "qa-workflow@example.com"
-      },
-      "source": {
-        "type": "url",
-        "url": "https://github.com/kishansorathiyatops/qa-workflow.git",
-        "sha": "main"
-      },
-      "homepage": "https://github.com/kishansorathiyatops/qa-workflow"
+      }
     }
   ]
 }
