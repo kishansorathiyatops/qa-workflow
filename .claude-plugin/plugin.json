@@ -7,5 +7,8 @@
     "name": "QA Workflow Team",
     "email": "qa-workflow@example.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "commands": [],
+  "agents": [],
+  "skills": []
 }
