@@ -16,7 +16,7 @@
         "email": "qa-workflow@example.com"
       },
       "source": {
-        "source": "url",
+        "type": "url",
         "url": "https://github.com/kishansorathiyatops/qa-workflow.git",
         "sha": "main"
       },
