@@ -20,42 +20,42 @@
     {
       "name": "qa-workflow init",
       "description": "Initialize new QA project and configure Jira integration (optional)",
-      "skill": "qa-workflow:init"
+      "skill": "qa-workflow-init"
     },
     {
       "name": "qa-workflow analyze",
       "description": "Analyze requirements and identify test scenarios",
-      "skill": "qa-workflow:analyze"
+      "skill": "qa-workflow-analyze"
     },
     {
       "name": "qa-workflow create-tests",
       "description": "Generate test cases from requirements",
-      "skill": "qa-workflow:create-tests"
+      "skill": "qa-workflow-create-tests"
     },
     {
       "name": "qa-workflow modify-tests",
       "description": "Modify and update existing test cases",
-      "skill": "qa-workflow:modify-tests"
+      "skill": "qa-workflow-modify-tests"
     },
     {
       "name": "qa-workflow prepare-data",
       "description": "Create and organize test data",
-      "skill": "qa-workflow:prepare-data"
+      "skill": "qa-workflow-prepare-data"
     },
     {
       "name": "qa-workflow review",
       "description": "Quality review of test cases (QA Lead gate)",
-      "skill": "qa-workflow:review"
+      "skill": "qa-workflow-review"
     },
     {
       "name": "qa-workflow execute",
       "description": "Execute tests and track results",
-      "skill": "qa-workflow:execute"
+      "skill": "qa-workflow-execute"
     },
     {
       "name": "qa-workflow report",
       "description": "Generate test execution report",
-      "skill": "qa-workflow:report"
+      "skill": "qa-workflow-report"
     }
   ]
 }
