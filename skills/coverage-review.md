@@ -1,3 +1,9 @@
+---
+name: coverage-review
+description: Quality and coverage review
+type: skill
+---
+
 # Coverage & Quality Review Skill
 
 ## Purpose

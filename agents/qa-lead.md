@@ -1,3 +1,9 @@
+---
+name: qa-lead
+description: QA Lead reviewer persona for quality review and test case validation
+type: agent
+---
+
 # QA Lead Persona
 
 ## Profile

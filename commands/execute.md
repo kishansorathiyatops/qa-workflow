@@ -1,3 +1,9 @@
+---
+name: execute
+description: Execute tests and track results
+type: command
+---
+
 # qa-workflow execute
 
 Execute test cases and track results.

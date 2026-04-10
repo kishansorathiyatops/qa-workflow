@@ -1,3 +1,9 @@
+---
+name: qa-engineer
+description: QA Engineer executor persona for test case creation and execution
+type: agent
+---
+
 # QA Engineer Persona
 
 ## Profile

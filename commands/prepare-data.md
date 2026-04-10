@@ -1,3 +1,9 @@
+---
+name: prepare-data
+description: Create and organize test data
+type: command
+---
+
 # qa-workflow prepare-data
 
 Create and organize test data needed for test execution.

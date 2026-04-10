@@ -1,3 +1,9 @@
+---
+name: report
+description: Generate test execution report
+type: command
+---
+
 # qa-workflow report
 
 Generate comprehensive test execution report with metrics and insights.

@@ -1,3 +1,9 @@
+---
+name: analyze
+description: Analyze requirements and identify test scenarios
+type: command
+---
+
 # qa-workflow analyze
 
 Load Jira ticket and prepare for test case creation.

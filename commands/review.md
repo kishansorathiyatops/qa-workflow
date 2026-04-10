@@ -1,3 +1,9 @@
+---
+name: review
+description: Quality review of test cases
+type: command
+---
+
 # qa-workflow review
 
 Review test cases and test data for quality and completeness.

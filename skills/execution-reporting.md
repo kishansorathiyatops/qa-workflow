@@ -1,3 +1,9 @@
+---
+name: execution-reporting
+description: Test execution and report generation
+type: skill
+---
+
 # Execution & Reporting Skill
 
 ## Purpose

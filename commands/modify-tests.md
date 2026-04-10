@@ -1,3 +1,9 @@
+---
+name: modify-tests
+description: Modify existing test cases
+type: command
+---
+
 # qa-workflow modify-tests
 
 Modify test cases - add or remove test cases before review.

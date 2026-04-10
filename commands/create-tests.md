@@ -1,3 +1,9 @@
+---
+name: create-tests
+description: Generate test cases from requirements
+type: command
+---
+
 # qa-workflow create-tests
 
 Generate test cases from analyzed requirements.

@@ -1,3 +1,9 @@
+---
+name: test-case-generation
+description: Test case creation and validation
+type: skill
+---
+
 # Test Case Generation Skill
 
 ## Purpose

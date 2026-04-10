@@ -1,3 +1,9 @@
+---
+name: init
+description: Initialize new QA project
+type: command
+---
+
 # qa-workflow init
 
 Initialize a new QA test project.

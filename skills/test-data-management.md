@@ -1,3 +1,9 @@
+---
+name: test-data-management
+description: Test data organization
+type: skill
+---
+
 # Test Data Management Skill
 
 ## Purpose
