@@ -5,18 +5,5 @@
   "author": {
     "name": "QA Workflow Team",
     "email": "qa-workflow@example.com"
-  },
-  "license": "MIT",
-  "keywords": [
-    "qa",
-    "testing",
-    "test-cases",
-    "test-data",
-    "quality-review",
-    "execution",
-    "reporting"
-  ],
-  "skills": "../skills/",
-  "agents": "../agents/",
-  "commands": "../commands/"
+  }
 }
