@@ -15,5 +15,75 @@
     "quality-review",
     "execution",
     "reporting"
+  ],
+  "commands": [
+    {
+      "name": "qa-workflow init",
+      "description": "Initialize new QA project and configure Jira integration (optional)",
+      "agent": "qa-engineer"
+    },
+    {
+      "name": "qa-workflow analyze",
+      "description": "Analyze requirements and identify test scenarios",
+      "agent": "qa-engineer"
+    },
+    {
+      "name": "qa-workflow create-tests",
+      "description": "Generate test cases from requirements using Test Case Generation Skill",
+      "agent": "qa-engineer",
+      "skill": "test-case-generation"
+    },
+    {
+      "name": "qa-workflow prepare-data",
+      "description": "Create and organize test data using Test Data Management Skill",
+      "agent": "qa-engineer",
+      "skill": "test-data-management"
+    },
+    {
+      "name": "qa-workflow review",
+      "description": "Quality review of test cases (QA Lead gate) using Coverage & Quality Review Skill",
+      "agent": "qa-lead",
+      "skill": "coverage-review"
+    },
+    {
+      "name": "qa-workflow execute",
+      "description": "Execute tests and track results using Execution & Reporting Skill",
+      "agent": "qa-engineer",
+      "skill": "execution-reporting"
+    },
+    {
+      "name": "qa-workflow report",
+      "description": "Generate test execution report using Execution & Reporting Skill",
+      "agent": "qa-engineer",
+      "skill": "execution-reporting"
+    }
+  ],
+  "agents": [
+    {
+      "name": "qa-engineer",
+      "description": "QA Engineer executor persona - performs test creation, data preparation, and execution"
+    },
+    {
+      "name": "qa-lead",
+      "description": "QA Lead reviewer persona - reviews quality and coverage of test cases"
+    }
+  ],
+  "skills": [
+    {
+      "name": "test-case-generation",
+      "description": "Test case creation and validation"
+    },
+    {
+      "name": "test-data-management",
+      "description": "Test data organization and management"
+    },
+    {
+      "name": "coverage-review",
+      "description": "Quality and coverage review of test cases"
+    },
+    {
+      "name": "execution-reporting",
+      "description": "Test execution and report generation"
+    }
   ]
 }
