@@ -19,35 +19,35 @@
   "plugin": "qa-workflow",
   "commands": [
     {
-      "name": "init",
+      "name": "qa-workflow init",
       "description": "Initialize new QA project and configure Jira integration (optional)"
     },
     {
-      "name": "analyze",
+      "name": "qa-workflow analyze",
       "description": "Analyze requirements and identify test scenarios"
     },
     {
-      "name": "create-tests",
+      "name": "qa-workflow create-tests",
       "description": "Generate test cases from requirements"
     },
     {
-      "name": "modify-tests",
+      "name": "qa-workflow modify-tests",
       "description": "Modify and update existing test cases"
     },
     {
-      "name": "prepare-data",
+      "name": "qa-workflow prepare-data",
       "description": "Create and organize test data"
     },
     {
-      "name": "review",
+      "name": "qa-workflow review",
       "description": "Quality review of test cases (QA Lead gate)"
     },
     {
-      "name": "execute",
+      "name": "qa-workflow execute",
       "description": "Execute tests and track results"
     },
     {
-      "name": "report",
+      "name": "qa-workflow report",
       "description": "Generate test execution report"
     }
   ],
