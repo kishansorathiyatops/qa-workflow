@@ -1,21 +1,4 @@
 {
-  "name": "qa-workflow",
-  "version": "0.1.0",
-  "description": "End-to-end QA testing workflow plugin: analyze requirements → create test cases → prepare test data → review quality → execute tests → generate reports",
-  "author": {
-    "name": "QA Workflow Team",
-    "email": "qa-workflow@example.com"
-  },
-  "license": "MIT",
-  "keywords": [
-    "qa",
-    "testing",
-    "test-cases",
-    "test-data",
-    "quality-review",
-    "execution",
-    "reporting"
-  ],
   "commands": [
     {
       "name": "qa-workflow init",
