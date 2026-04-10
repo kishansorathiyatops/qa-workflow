@@ -15,5 +15,68 @@
     "quality-review",
     "execution",
     "reporting"
+  ],
+  "plugin": "qa-workflow",
+  "commands": [
+    {
+      "name": "init",
+      "description": "Initialize new QA project and configure Jira integration (optional)"
+    },
+    {
+      "name": "analyze",
+      "description": "Analyze requirements and identify test scenarios"
+    },
+    {
+      "name": "create-tests",
+      "description": "Generate test cases from requirements"
+    },
+    {
+      "name": "modify-tests",
+      "description": "Modify and update existing test cases"
+    },
+    {
+      "name": "prepare-data",
+      "description": "Create and organize test data"
+    },
+    {
+      "name": "review",
+      "description": "Quality review of test cases (QA Lead gate)"
+    },
+    {
+      "name": "execute",
+      "description": "Execute tests and track results"
+    },
+    {
+      "name": "report",
+      "description": "Generate test execution report"
+    }
+  ],
+  "agents": [
+    {
+      "name": "qa-engineer",
+      "description": "QA Engineer executor persona"
+    },
+    {
+      "name": "qa-lead",
+      "description": "QA Lead reviewer persona"
+    }
+  ],
+  "skills": [
+    {
+      "name": "test-case-generation",
+      "description": "Test case creation and validation"
+    },
+    {
+      "name": "test-data-management",
+      "description": "Test data organization"
+    },
+    {
+      "name": "coverage-review",
+      "description": "Quality and coverage review"
+    },
+    {
+      "name": "execution-reporting",
+      "description": "Test execution and report generation"
+    }
   ]
 }
