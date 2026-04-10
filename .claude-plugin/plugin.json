@@ -1,6 +1,7 @@
 {
   "name": "qa-workflow",
   "version": "0.1.0",
+  "displayName": "QA Workflow",
   "description": "End-to-end QA testing workflow plugin: analyze requirements → create test cases → prepare test data → review quality → execute tests → generate reports",
   "author": {
     "name": "QA Workflow Team",
@@ -18,72 +19,66 @@
   ],
   "commands": [
     {
-      "name": "qa-workflow init",
-      "description": "Initialize new QA project and configure Jira integration (optional)",
-      "agent": "qa-engineer"
+      "name": "init",
+      "description": "Initialize a new QA test project"
     },
     {
-      "name": "qa-workflow analyze",
-      "description": "Analyze requirements and identify test scenarios",
-      "agent": "qa-engineer"
+      "name": "analyze",
+      "description": "Analyze requirements and identify test scope"
     },
     {
-      "name": "qa-workflow create-tests",
-      "description": "Generate test cases from requirements using Test Case Generation Skill",
-      "agent": "qa-engineer",
-      "skill": "test-case-generation"
+      "name": "create-tests",
+      "description": "Generate test cases from requirements"
     },
     {
-      "name": "qa-workflow prepare-data",
-      "description": "Create and organize test data using Test Data Management Skill",
-      "agent": "qa-engineer",
-      "skill": "test-data-management"
+      "name": "prepare-data",
+      "description": "Create and organize test data"
     },
     {
-      "name": "qa-workflow review",
-      "description": "Quality review of test cases (QA Lead gate) using Coverage & Quality Review Skill",
-      "agent": "qa-lead",
-      "skill": "coverage-review"
+      "name": "review",
+      "description": "Review test cases quality (QA Lead)"
     },
     {
-      "name": "qa-workflow execute",
-      "description": "Execute tests and track results using Execution & Reporting Skill",
-      "agent": "qa-engineer",
-      "skill": "execution-reporting"
+      "name": "execute",
+      "description": "Execute tests and track results"
     },
     {
-      "name": "qa-workflow report",
-      "description": "Generate test execution report using Execution & Reporting Skill",
-      "agent": "qa-engineer",
-      "skill": "execution-reporting"
+      "name": "report",
+      "description": "Generate comprehensive test report"
     }
   ],
   "agents": [
     {
       "name": "qa-engineer",
-      "description": "QA Engineer executor persona - performs test creation, data preparation, and execution"
+      "displayName": "QA Engineer",
+      "description": "QA Engineer persona - executor of testing workflow"
     },
     {
       "name": "qa-lead",
-      "description": "QA Lead reviewer persona - reviews quality and coverage of test cases"
+      "displayName": "QA Lead",
+      "description": "QA Lead persona - quality reviewer and approver"
     }
   ],
   "skills": [
     {
       "name": "test-case-generation",
-      "description": "Test case creation and validation"
+      "displayName": "Test Case Generation",
+      "description": "Generate comprehensive, well-formed test cases"
     },
     {
       "name": "test-data-management",
-      "description": "Test data organization and management"
+      "displayName": "Test Data Management",
+      "description": "Organize and structure test data efficiently"
     },
     {
       "name": "coverage-review",
-      "description": "Quality and coverage review of test cases"
+      "displayName": "Coverage & Quality Review",
+      "description": "Validate test case quality and completeness"
     },
     {
       "name": "execution-reporting",
-      "description": "Test execution and report generation"
+      "displayName": "Execution & Reporting",
+      "description": "Guide test execution and generate insights"
     }
   ]
 }
