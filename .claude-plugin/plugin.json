@@ -16,23 +16,86 @@
     "execution",
     "reporting"
   ],
-  "agents": [
-    "./agents/qa-engineer.md",
-    "./agents/qa-lead.md"
-  ],
   "commands": [
-    "./commands/init.md",
-    "./commands/analyze.md",
-    "./commands/create-tests.md",
-    "./commands/prepare-data.md",
-    "./commands/review.md",
-    "./commands/execute.md",
-    "./commands/report.md"
+    {
+      "name": "init",
+      "description": "Initialize new QA project",
+      "path": "./commands/init.md"
+    },
+    {
+      "name": "analyze",
+      "description": "Analyze requirements, identify scenarios",
+      "path": "./commands/analyze.md"
+    },
+    {
+      "name": "create-tests",
+      "description": "Generate test cases from requirements",
+      "path": "./commands/create-tests.md"
+    },
+    {
+      "name": "prepare-data",
+      "description": "Create and organize test data",
+      "path": "./commands/prepare-data.md"
+    },
+    {
+      "name": "modify-test",
+      "description": "Modify existing test cases",
+      "path": "./commands/modify-test.md"
+    },
+    {
+      "name": "review",
+      "description": "Quality review of test cases",
+      "path": "./commands/review.md"
+    },
+    {
+      "name": "execute",
+      "description": "Execute tests and track results",
+      "path": "./commands/execute.md"
+    },
+    {
+      "name": "report",
+      "description": "Generate test execution report",
+      "path": "./commands/report.md"
+    }
+   
+  ],
+  "agents": [
+    {
+      "name": "qa-engineer",
+      "description": "QA Engineer executor persona",
+      "path": "./agents/qa-engineer.md"
+    },
+    {
+      "name": "qa-lead",
+      "description": "QA Lead reviewer persona",
+      "path": "./agents/qa-lead.md"
+    },
+    {
+      "name": "qa-agent",
+      "description": "QA Agent",
+      "path": "./agents/qa_agent.md"
+    }
   ],
   "skills": [
-    "./skills/test-case-generation.md",
-    "./skills/test-data-management.md",
-    "./skills/coverage-review.md",
-    "./skills/execution-reporting.md"
+    {
+      "name": "test-case-generation",
+      "description": "Test case creation and validation",
+      "path": "./skills/test-case-generation.md"
+    },
+    {
+      "name": "test-data-management",
+      "description": "Test data organization",
+      "path": "./skills/test-data-management.md"
+    },
+    {
+      "name": "coverage-review",
+      "description": "Quality and coverage review",
+      "path": "./skills/coverage-review.md"
+    },
+    {
+      "name": "execution-reporting",
+      "description": "Test execution and report generation",
+      "path": "./skills/execution-reporting.md"
+    }
   ]
 }
